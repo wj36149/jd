@@ -15,7 +15,6 @@ cron "36 0,6-23/2 * * *" script-path=https://raw.githubusercontent.com/star261/j
 
 ============小火箭=========
 618动物联萌 = type=cron,script-path=https://raw.githubusercontent.com/star261/jd/main/scripts/jd_zoo.js, cronexpr="36 0,6-23/2 * * *", timeout=3600, enable=true
-*/
 const $ = new Env('618动物联萌');
 const notify = $.isNode() ? require('./sendNotify') : '';
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
